@@ -17,7 +17,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8001/api/auth/register", formData);
+      await axios.post("https://auth-assingment-backend.onrender.com/api/auth/register", formData);
       alert("Registered successfully! You can now log in.");
       navigate("/login");
     } catch (err) {
